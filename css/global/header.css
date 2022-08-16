@@ -22,13 +22,9 @@
 }
 
 .header-menu a {
-  color: var(--cor-0);
-  font-size: 18px;
   padding: 16px 0px;
   display: inline-block;
   position: relative;
-  font-family: "Poppins";
-  font-weight: 400;
 }
 
 .header-menu a::after {
