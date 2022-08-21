@@ -42,16 +42,39 @@
   content: "”";
 }
 
-@media(max-width:800px){
-  .depoimento{
+@media (max-width: 800px) {
+  .depoimento {
     grid-template-columns: 1fr;
     text-align: center;
   }
-  .depoimento img{
+  .depoimento img {
     max-height: 200px;
   }
-  .depoimento-conteudo{
+  .depoimento-conteudo {
     padding: 40px 20px;
     justify-self: center;
+  }
+
+  .depoimento p::before {
+    content: "“";
+    left: -30px;
+    top: -20px;
+  }
+
+  .depoimento p::before,
+  .depoimento p::after {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .depoimento p::before {
+    content: "“";
+    left: -15px;
+    top: -25px;
+  }
+  .depoimento p::before,
+  .depoimento p::after {
+    font-size: 3rem;
   }
 }
